@@ -40,6 +40,7 @@ server.post('/users', async (req,res) => {
 
     const response = await database.insertUser(userData)
     return res.status(200).json(response);
+    
 });
  
 
